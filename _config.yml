@@ -2,4 +2,4 @@ theme: jekyll-theme-modernist
 title: Data Incubator Project
 description: Ali Azad <br> Data Enthusiast <br> ali.azad -at- gatech.edu
 show_downloads: false
-google_analytics:   #UA-120142783-4
+google_analytics:  "UA-120142783-4"
