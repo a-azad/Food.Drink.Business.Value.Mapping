@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 theme: jekyll-theme-midnight
 title: Yelp Data Project 
 description: A proposal for Data Incubator Project by Ali Azad
+=======
+theme: jekyll-theme-modernist
+title: Data Incubator Project
+description: Ali Azad <br> Data Enthusiast <br> ali.azad -at- gatech.edu
+>>>>>>> 4f79fe44700a6c7f955a2dbacefc9e35b320e197
 show_downloads: false
 google_analytics:   #UA-120142783-4
