@@ -1,4 +1,20 @@
-## Welcome to GitHub Pages
+### Motivation
+
+The dddd....
+
+### Data
+
+The atractive [Yelp Open Dataset](https://www.yelp.com/dataset) as promoted by its owners is _an all-purpose dataset for learning_ which continually is used across the data sceince community. In this project, __YELP__ dataset is explored to show the advantage of using large dataset in helping businesses --the food industry in this case. 
+
+### Access to data
+
+Yelp provides access to data via their API (GraphQL) as well as direct access to a SQL dump. In this project, I set up a local SQL server to provide access to data directly within Python evironment. So, 
+
+
+
+
+
+### Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/a-azad/Yelp.Data.Project/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
