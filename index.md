@@ -25,10 +25,19 @@ As mentioned, this problem is multi-dimensional --probably a very long list. Aff
 These two factors, can help generating a map that can characterize food business values in Seattle.
 
 ### Tier One: Affordability
-In the first step, I needed a proxy to be able to estimate financial health of different areas in Seattle. The proxy is a function that can estimate the price of housing (per square footage) for any given location (X,Y values). This work was a separate I did on Seattle's housing market. The data is limited to 2014-2015 and extension of the work to today's [crazy] market is not practical. Data exploration and ML modeling is captured in multiple Jupyter Notebooks in [this repository](https://github.com/a-azad/Seattle.housing.market). The problem is initially a regression modeling exercise. Simple linear model and tree-based algorithms were used. Although Random Forest (like always) offered a significant improvement to the model, for the purpose of statistical inference, improved (Ridge) linear model was chosen. Figure below, show the locations where home price can be estimated. 
-</br>
 
-![](map_locations_housrin.JPG)
+![](pix/map_locations_housrin.JPG)
+
+In the first step, I needed a proxy to be able to estimate financial health of different areas in Seattle. The proxy is a function that can estimate the price of housing (per square footage) for any given location (X,Y values). This work was a separate I did on Seattle's housing market. The data is limited to 2014-2015 and extension of the work to today's [crazy] market is not practical. Data exploration and ML modeling is captured in multiple Jupyter Notebooks in [this repository](https://github.com/a-azad/Seattle.housing.market). The map below, show the density of housing data in the dataset used in this step. The data is a [Kaggle dataset](https://www.kaggle.com/harlfoxem/housesalesprediction).
+The problem is initially a regression modeling exercise. Simple linear model and tree-based algorithms were used. Although Random Forest (like always) offered a significant improvement to the model, for the purpose of statistical inference, improved (Ridge) linear model was chosen. Figure below, show the locations where home price can be estimated. 
+
+
+
+
+![](pix/housing.png)
+
+
+
 
 
 
