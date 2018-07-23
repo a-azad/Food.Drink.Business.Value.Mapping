@@ -21,7 +21,7 @@ The attractive [Yelp Open Dataset](https://www.yelp.com/dataset) as promoted by 
 Yelp provides access to data via their API (GraphQL) as well as direct access to a SQL dump. In this project, I set up a local SQL server to provide access to data directly within Python environment. So, 
 
 
-![](pix/yelp_dataset_schema.png)
+![](pix/yelp_dataset_schema_.png)
 
 
 
