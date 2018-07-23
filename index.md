@@ -26,26 +26,16 @@ These two factors, can help generating a map that can characterize food business
 
 ### Tier One: Affordability
 
+In the first step, I needed a proxy to be able to estimate financial health of different areas in Seattle. The proxy is a function that can estimate the price of housing (per square footage) for any given location (X,Y values). This work was a separate I did on Seattle's housing market. The data is limited to 2014-2015 and extension of the work to today's [crazy] market is not practical. Data exploration and ML modeling is captured in multiple Jupyter Notebooks in [this repository](https://github.com/a-azad/Seattle.housing.market). The map below, show the density of housing data in the dataset used in this step. The data is a [Kaggle dataset](https://www.kaggle.com/harlfoxem/housesalesprediction).
+
 ![](pix/map_locations_housrin.JPG)
 
-In the first step, I needed a proxy to be able to estimate financial health of different areas in Seattle. The proxy is a function that can estimate the price of housing (per square footage) for any given location (X,Y values). This work was a separate I did on Seattle's housing market. The data is limited to 2014-2015 and extension of the work to today's [crazy] market is not practical. Data exploration and ML modeling is captured in multiple Jupyter Notebooks in [this repository](https://github.com/a-azad/Seattle.housing.market). The map below, show the density of housing data in the dataset used in this step. The data is a [Kaggle dataset](https://www.kaggle.com/harlfoxem/housesalesprediction).
 The problem is initially a regression modeling exercise. Simple linear model and tree-based algorithms were used. Although Random Forest (like always) offered a significant improvement to the model, for the purpose of statistical inference, improved (Ridge) linear model was chosen. Figure below, show the locations where home price can be estimated. 
-
-
-
 
 ![](pix/housing.png)
 
-
-
-
-
-
-
 ### Tier Two: Business Segmentation
-The attractive [Yelp Open Dataset](https://www.yelp.com/dataset) as promoted by its owners is _an all-purpose dataset for learning_ which continually is used across the data science community. In this project, __YELP__ dataset is explored to show the advantage of using large dataset in helping businesses --the food industry in this case. 
-Yelp provides access to data via their API (GraphQL) as well as direct access to a SQL dump. In this project, I set up a local SQL server to provide access to data directly within Python environment. So, 
-
+The interesting and a bit challenging part of this project is to learn trends of market from the attractive [Yelp Open Dataset](https://www.yelp.com/dataset). The dataset (as promoted) is _an all-purpose dataset for learning_ which continually is used across the data science community. In this project, __YELP__ dataset is explored to show the advantage of using large datasets. Yelp provides access to data via their API (GraphQL) as well as direct access to a SQL dump. I set up a local SQL server to provide access to data directly within Python environment. The figure is the structure of the SQL database schema.
 
 ![](pix/yelp_dataset_schema_.png)
 
