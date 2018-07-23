@@ -22,20 +22,19 @@ As mentioned, this problem is multi-dimensional --probably a very long list. Aff
 - Trends (and forecasts) of highs/lows of demand in segments of the industry. Segments related to:
     - Location
     - Service characteristics
+These two factors, can help generating a map that can characterize food business values in Seattle.
 
 ### Tier One: Affordability
-In the first step, I needed a proxy to be able to estimate financial health of different areas in Seattle. The proxy is a function that can estimate the price of housing (per square footage) for any given location (X,Y values). This part is almost done. 
+In the first step, I needed a proxy to be able to estimate financial health of different areas in Seattle. The proxy is a function that can estimate the price of housing (per square footage) for any given location (X,Y values). This work was a separate I did on Seattle's housing market. The data is limited to 2014-2015 and extension of the work to today's [crazy] market is not practical. Data exploration and ML modeling is captured in multiple Jupyter Notebooks in [this repository](https://github.com/a-azad/Seattle.housing.market). The problem is initially a regression modeling exercise. Simple linear model and tree-based algorithms were used. Although Random Forest (like always) offered a significant improvement to the model, for the purpose of statistical inference, improved (Ridge) linear model was chosen. Figure below, show the locations where home price can be estimated. 
+</br>
+
+![](map_locations_housrin.JPG)
+
+
+
 
 ### Tier Two: Business Segmentation
-
-
 The attractive [Yelp Open Dataset](https://www.yelp.com/dataset) as promoted by its owners is _an all-purpose dataset for learning_ which continually is used across the data science community. In this project, __YELP__ dataset is explored to show the advantage of using large dataset in helping businesses --the food industry in this case. 
-
-
-
-
-### Access to data
-
 Yelp provides access to data via their API (GraphQL) as well as direct access to a SQL dump. In this project, I set up a local SQL server to provide access to data directly within Python environment. So, 
 
 
