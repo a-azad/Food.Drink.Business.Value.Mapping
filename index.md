@@ -13,13 +13,19 @@ _NOTE: An extended version of this work will be my MSc thesis at Georgia Tech_
 
 
 ### Experiment Unit
-I live and eat in __Seattle__. No need to explain why I would love to start this work in Seattle. To start focus would be on restaurants only. There are some early hypothesis testing and proxy modeling that need to be made before I can firmly scale it up and include more dimensions to the project.
+I live and eat in __Seattle__. No need to explain why I would love to start this work in Seattle. To start my focus is on restaurants only. There are some early hypothesis testing and proxy modeling that are needed to be made before I can firmly scale it up and include more dimensions to the project.
 
 ![](pix/seattle.jpg)
 
+### Impacting Factors
+As mentioned, this problem is multi-dimensional --probably a very long list. Affordability (financial), location (vibe, adjacent businesses), access (traffic, parking, etc.), service quality (cuisine type, food quality, etc.), density of population are among many others.\
+__However__ for the sake of this short project, I limit myself to two:
+- Affordability (financial)
+- Trends (and forecasts) of highs/lows of demand in segments of the industry. Segments related to:
+    - Location
+    - Service characteristics
 
 ### Tier One
-
 In the first step, I needed a proxy to be able to estimate financial health of different areas 
 
 The attractive [Yelp Open Dataset](https://www.yelp.com/dataset) as promoted by its owners is _an all-purpose dataset for learning_ which continually is used across the data science community. In this project, __YELP__ dataset is explored to show the advantage of using large dataset in helping businesses --the food industry in this case. 
