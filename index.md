@@ -1,4 +1,4 @@
-___Note___: _An extended version of this work will be my MSc thesis at Georgia Tech_
+___Note___: _An extended version of this work will be my MSc thesis at Georgia Tech._
 
 ### Motivation
 
