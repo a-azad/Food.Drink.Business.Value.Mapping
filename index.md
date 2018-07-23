@@ -1,3 +1,5 @@
+_NOTE: An extended version of this work will be my MSc thesis at Georgia Tech_
+
 ### Motivation
 
 - __Have you__ ever thought about funding a business in the  __food and drink__ industry? Have you ever wanted to have your own business but you did not know what and where? 
