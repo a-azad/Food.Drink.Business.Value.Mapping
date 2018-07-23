@@ -10,6 +10,9 @@
 ### Experiment Unit
 I live and eat in __Seattle__. No need to explain why I would love to start this work in Seattle. To start focus would be on restaurants only. There are some early hypothesis testing and proxy modeling that need to be made before I can firmly scale it up and include more dimensions to the project.
 
+![](pix/seattle.jpg)
+
+
 ### Tier One
 
 In the first step, I needed a proxy to be able to estimate financial health of different areas 
