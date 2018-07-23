@@ -1,4 +1,4 @@
-Note: _An extended version of this work will be my MSc thesis at Georgia Tech_
+___Note___: _An extended version of this work will be my MSc thesis at Georgia Tech_
 
 ### Motivation
 
@@ -17,8 +17,7 @@ I live and eat in __Seattle__. No need to explain why I would love to start this
 ![](pix/seattle.jpg)
 
 ### Impacting Factors
-As mentioned, this problem is multi-dimensional --probably a very long list. Affordability (financial), location (vibe, adjacent businesses), access (traffic, parking, etc.), service quality (cuisine type, food quality, etc.), density of population are among many others.\
-__However__ for the sake of this short project, I limit myself to two:
+As mentioned, this problem is multi-dimensional --probably a very long list. Affordability (financial), location (vibe, adjacent businesses), access (traffic, parking, etc.), service quality (cuisine type, food quality, etc.), density of population are among many others. __However__ for the sake of this short project, I limit myself to two:
 - Affordability (financial)
 - Trends (and forecasts) of highs/lows of demand in segments of the industry. Segments related to:
     - Location
@@ -27,9 +26,11 @@ __However__ for the sake of this short project, I limit myself to two:
 ### Tier One: Affordability
 In the first step, I needed a proxy to be able to estimate financial health of different areas in Seattle. The proxy is a function that can estimate the price of housing (per square footage) for any given location (X,Y values). This part is almost done. 
 
+### Tier Two: Business Segmentation
+
+
 The attractive [Yelp Open Dataset](https://www.yelp.com/dataset) as promoted by its owners is _an all-purpose dataset for learning_ which continually is used across the data science community. In this project, __YELP__ dataset is explored to show the advantage of using large dataset in helping businesses --the food industry in this case. 
 
-### Tier Two: Business Segmentation
 
 
 
