@@ -7,6 +7,9 @@
 - __This__ is a multi-tier problem solving project in business analytics. The idea is very simple.Through data, we know how often people go to what restaurant and roughly how much they spend. We know economics of different areas in a city, we know how hard/easy it is for people to move around to reach a popular place, we can estimate traffic, we know parking capacity, we know weather challenges, we know ... and there are huge amount of data that is available to support us. It is the matter of how efficient we can link them.
 - __Result__ of this project is a map. A map that can help businesses to think about their next move. If you already have a business, you want to know what near future might look like in your specialty. If you want to open a new business, what cuisine you should think of and where.
 
+![](pix/map.png)
+
+
 ### Experiment Unit
 I live and eat in __Seattle__. No need to explain why I would love to start this work in Seattle. To start focus would be on restaurants only. There are some early hypothesis testing and proxy modeling that need to be made before I can firmly scale it up and include more dimensions to the project.
 
