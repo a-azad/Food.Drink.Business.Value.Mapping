@@ -35,7 +35,19 @@ The problem is initially a regression modeling exercise. Simple linear model and
 ![](pix/housing.png)
 
 ### Tier Two: Business Segmentation
-The interesting and a bit challenging part of this project is to learn trends of market from the attractive [Yelp Open Dataset](https://www.yelp.com/dataset). The dataset (as promoted) is _an all-purpose dataset for learning_ which continually is used across the data science community. In this project, __YELP__ dataset is explored to show the advantage of using large datasets. Yelp provides access to data via their API (GraphQL) as well as direct access to a SQL dump. I set up a local SQL server to provide access to data directly within Python environment. The figure is the structure of the SQL database schema.
+The interesting and a bit challenging part of this project is to learn trends of market from the attractive [Yelp Open Dataset](https://www.yelp.com/dataset). The dataset (as promoted) is _an all-purpose dataset for learning_ which continually is used across the data science community. In this project, __YELP__ dataset is explored to show the advantage of using large datasets. Yelp provides access to data via their API (GraphQL) as well as direct access to a SQL dump. I set up a local SQL server to provide access to data directly within Python environment.
+
+### Data Preparation
+The popular Yelp dataset is provided in `JSON` or `SQL` format via [Yelp Open Dataset](https://www.yelp.com/dataset). It is also available via[Kaggle's page](https://www.kaggle.com/yelp-dataset/yelp-dataset) or [Kaggle's API](https://github.com/Kaggle/kaggle-api). Just for fun and to explore these options, I tested these steps:
+
+- Import JSON-converted CSV's via Kaggle's API
+- Built a local database from scratch
+- Provide access to the project via a localhost
+
+Again, this is not necessarily an optimum approach but it gave me an opportunity to learn. The ultimate database is built in `PostgreSQL`. Codes related the data handling process as explained above are stored in [this folder](). The figure below is the structure of the SQL database schema.
 
 ![](pix/yelp_dataset_schema_.png)
+
+
+
 
