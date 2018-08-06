@@ -18,16 +18,13 @@ I live and eat in __Seattle__. No need to explain why I would want to run this p
 
 ### Impacting Factors
 This problem is multi-dimensional with probably a very long list of factors. Affordability (financial), location (vibe, adjacent businesses), accessibility (traffic, parking, etc.), service quality (cuisine type, food quality, etc.), population density, and customer satisfaction are among many others. However, for the sake of this short project, I limit myself to two:
-
 - Affordability (financial)
 - Trends (and forecasts) of highs/lows of demand in segments of the industry. Segments related to:
     - Location
     - Service characteristics
-
 These two factors, can help generating a map that characterizes food business values in Seattle.
 
 ### Step One: Area-Based Affordability Metric (60% of the overall project)
-
 In the first step, I needed a proxy to be able to learn financial capacity of different areas in Seattle. There is data from decennial census that can be used. However, it does not provide granularity at the level required for this project. Moreover, it is a bit more fun to explore other sources of data. For this reason, I built up my proxy from the attractive housing market in Seattle. The proxy predicts property price per square footage as a function of location (X, Y) and other impacting variables. This work was a separate project I did on Seattle's housing market. The data is limited to 2014-2015 and extension of the work to today's [crazy] market might not be practical. Data exploration and ML modeling is captured in multiple `Jupyter` Notebooks in [this repository](https://github.com/a-azad/Seattle.housing.market). The map below, show the density of housing data in the dataset. The data was imported via [Kaggle's API](https://www.kaggle.com/harlfoxem/housesalesprediction).
 In short, housing market analysis provided two major outputs:
 * An affordability metric which is a normalized $/sqf function per location.
