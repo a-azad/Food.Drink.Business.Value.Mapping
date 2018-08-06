@@ -37,7 +37,7 @@ The problem is initially a regression modeling exercise. Simple linear model to 
 
 ### Step Two: Business Segmentation (25% of the overall project)
 The interesting and a bit challenging part of this project is to learn trends of the market from the attractive [Yelp Open Dataset](https://www.yelp.com/dataset). In this project, YELP dataset is explored to show the advantage of using a large dataset.  
-    
+
 __YELP Data Preparation__  
 Yelp dataset is repeatedly referenced in ML/NLP projects. In _Step Two_ I use it to segment and collect information about food businesses in Seattle. The data is provided in `JSON` and `SQL` format via [Yelp Open Dataset](https://www.yelp.com/dataset). It is also available via [Kaggle's API](https://www.kaggle.com/yelp-dataset/yelp-dataset). Just for fun and to explore multiple options, I followed these steps:  
 - Imported JSON-converted CSV's via Kaggle's API
@@ -51,17 +51,23 @@ Again, this is not necessarily an optimum approach but it gave me an opportunity
 ### Step Three: Application Development | Visualization (15% of the overall project)
 The result of this project will be a customizable map. A user should expect to:
 
-1- Provide values for map discretization. Seattle map is discretized into blocks.
-2- Select business(es) of interest from a list.
-3- Read some statistics of each discrete block by hovering over Seattle's map. Basic statistics such as:
+* Provide values for map discretization. Seattle map is discretized into blocks.
+* Select business(es) of interest from a list.
+* Read some statistics of each discrete block by hovering over Seattle's map. Basic statistics such as:
     - Number of total businesses
     - % of select businesses per block
     - Population
     - Financial metric ($/sqf)
     - Neighborhood local business metric
     - Business performance rate compared
-4- Overall performance maps
+* Overall performance maps
 
 This is a schematic of the application (webpage) that I will build in delivery of the project.
 
 ![](pix/final_app.png)
+
+__Suggestions__
+* Housing market does not react to income/demand in the food industry simultaneously. It should be used with caution.
+* The final model should be validated with actual financial records even with very minimum publicly available data.
+
+### Next
