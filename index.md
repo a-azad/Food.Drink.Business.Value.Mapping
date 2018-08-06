@@ -70,4 +70,13 @@ __Suggestions__
 * Housing market does not react to income/demand in the food industry simultaneously. It should be used with caution.
 * The final model should be validated with actual financial records even with very minimum publicly available data.
 
-### Next
+### Summary
+
+Output | Primary Nature | It can explain |  Source of Data | Progress
+--- | --- | ---| --- | --- 
+$/block | Value of land | financial capacity of the block | Kaggle | 100%
+population/block | population density  | potential demand per capita | Statistical Atlas | 100%
+$xpopulation | Total financial potential | Financial Capacity Metric | - | 50%
+$uplift/local biz | Impact of local business on $/sqf | Reaction to New Biz Metric | Kaggle | 80%
+Number of reviews/block | Proxy to current demand | Saturation Metric | Yelp | 20%
+Review sentiments | Biz performance satisfaction | Customer Service Metric | Yelp | 20%
