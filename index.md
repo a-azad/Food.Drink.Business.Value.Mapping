@@ -36,7 +36,8 @@ The problem is initially a regression modeling exercise. Simple linear model to 
 ![](pix/housing.png)
 
 ### Step Two: Business Segmentation (25% of the overall project)
-The interesting and a bit challenging part of this project is to learn trends of the market from the attractive [Yelp Open Dataset](https://www.yelp.com/dataset). In this project, __YELP__ dataset is explored to show the advantage of using a large dataset.    
+The interesting and a bit challenging part of this project is to learn trends of the market from the attractive [Yelp Open Dataset](https://www.yelp.com/dataset). In this project, YELP dataset is explored to show the advantage of using a large dataset.  
+    
 __YELP Data Preparation__  
 Yelp dataset is repeatedly referenced in ML/NLP projects. In _Step Two_ I use it to segment and collect information about food businesses in Seattle. The data is provided in `JSON` and `SQL` format via [Yelp Open Dataset](https://www.yelp.com/dataset). It is also available via [Kaggle's API](https://www.kaggle.com/yelp-dataset/yelp-dataset). Just for fun and to explore multiple options, I followed these steps:  
 - Imported JSON-converted CSV's via Kaggle's API
