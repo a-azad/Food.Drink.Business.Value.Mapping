@@ -17,7 +17,7 @@ I live and eat in __Seattle__. No need to explain why I would want to run this p
 ![](pix/seattle.jpg)
 
 ### Impacting Factors
-As mentioned, this problem is multi-dimensional --with probably a very long list of factors. Affordability (financial), location (vibe, adjacent businesses), accessibility (traffic, parking, etc.), service quality (cuisine type, food quality, etc.), population density, and customer satisfaction are among many others. __However__ for the sake of this short project, I limit myself to two:
+This problem is multi-dimensional with probably a very long list of factors. Affordability (financial), location (vibe, adjacent businesses), accessibility (traffic, parking, etc.), service quality (cuisine type, food quality, etc.), population density, and customer satisfaction are among many others. __However__ for the sake of this short project, I limit myself to two:
 
 - Affordability (financial)
 - Trends (and forecasts) of highs/lows of demand in segments of the industry. Segments related to:
@@ -28,7 +28,15 @@ These two factors, can help generating a map that characterizes food business va
 
 ### Step One: Affordability Estimation (60% of the overall project)
 
-In the first step, I needed a proxy to be able to learn financial health of different areas in Seattle. The proxy is a function that  the price of housing (per square footage) for any given location (X,Y values). This work was a separate project I did on Seattle's housing market. The data is limited to 2014-2015 and extension of the work to today's [crazy] market is not practical. Data exploration and ML modeling is captured in multiple Jupyter Notebooks in [this repository](https://github.com/a-azad/Seattle.housing.market). The map below, show the density of housing data in the dataset used in this step. The data is a [Kaggle dataset](https://www.kaggle.com/harlfoxem/housesalesprediction).In short, housing market analysis provides two major outputs:
+In the first step, I needed a proxy to be able to learn financial health of different areas in Seattle. There is data from decennial census (of 2010) that can be used. However, it does not provide granularity at the level required for this project. More over it is a bit more fun to explore other sources. 
+For this reason, I built up my proxy from the attractive housing market in Seattle. The proxy predicts property price per square footage as a function of location. 
+
+
+
+
+
+
+per square footage) for any given location (X,Y values). This work was a separate project I did on Seattle's housing market. The data is limited to 2014-2015 and extension of the work to today's [crazy] market is not practical. Data exploration and ML modeling is captured in multiple Jupyter Notebooks in [this repository](https://github.com/a-azad/Seattle.housing.market). The map below, show the density of housing data in the dataset used in this step. The data is a [Kaggle dataset](https://www.kaggle.com/harlfoxem/housesalesprediction).In short, housing market analysis provides two major outputs:
 * An affordability metric which is a normalized $/sqf function per location.
     - The metric is normalized based on property characteristics, population and household income. Data was read via [Statistical Atlas Website](https://statisticalatlas.com/place/Washington/Seattle/Household-Income).
 * A proxy that can estimate the value of _access to local business_ per location. This is really cool! It basically shows how different neighborhoods may react to new businesses.
@@ -52,7 +60,7 @@ The popular Yelp dataset is repeatedly referenced in ML/NLP projects. In _Step T
 - Built a local SQL database from scratch
 - Accessed to the database via a localhost
 
-Again, this is not necessarily an optimum approach but it gave me an opportunity to learn. The SQL database was built in `PostgreSQL`. Codes related the data handling process as explained above are stored in [this folder](https://github.com/a-azad/Food.Drink.Business.Value.Mapping/tree/master/data_handeling) --data is not loaded on Gothub for the size of files, >7GB). The figure below is the structure of the SQL database schema (from Yelp's website).
+Again, this is not necessarily an optimum approach but it gave me an opportunity to learn. The SQL database was built in `PostgreSQL`. Codes related the data handling process as explained above are stored in [this folder](https://github.com/a-azad/Food.Drink.Business.Value.Mapping/tree/master/data_handeling) --data is not loaded on Github for the size of files, >7GB). The figure below is the structure of the SQL database schema (from Yelp's website).
 
 ![](pix/yelp_dataset_schema_.png)
 
