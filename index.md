@@ -1,14 +1,12 @@
 ___Note___: _An extended version of this work will be my MSc thesis at Georgia Tech._
 
 ### Motivation
-
 - __Have you__ ever thought about funding a business in the food and drink industry? Have you ever wanted to have your own business but you did not know what and where? 
 - __You__ did not know to what capacity you should invest. You did not know what kind, i.e., restaurant, coffee shop, pub, pizza place or stake house. You did not know in downtown, near your apartment, north of town, in an expensive area, etc. You did not know what menu you should offer. You did not know about your business model. And of course tens of other key questions.
 - __You__ wanted to talk to a financial advisor, a business consultant, a talented chef, your mom, your friend who likes sushi, ... You were thinking of having a conversation with someone on Wall Street ... And, many other approaches.  
 - __Is__ there any one-fit-all solution? I think there is. Data can help us out. It is no longer in hands of some genius people who can predict the future. This is a multi-dimensional problem and we have data in many of those dimensions. 
 - __This__ is a multi-tier problem solving project in business analytics. The idea is very simple. Through data, we know how often people go to what restaurant and roughly how much they spend. We know economics of different areas in a city, we know how hard/easy it is for people to move around to reach a popular place, we can estimate traffic, we know parking capacity, we know weather challenges, we know ... and there are huge amount of data that is available to support us. It is the matter of how efficient we can link them.
 - __Result__ of this project is a map. A map that can help (current and future) businesses think about their next move. If you already have a business, you want to know what near future might look like in your specialty. If you want to open a new business, what cuisine you should think of and where.
-
 ![](pix/map_.png)
 
 ### Experiment Unit
@@ -25,7 +23,7 @@ This problem is multi-dimensional with probably a very long list of factors. Aff
 These two factors, can help generating a map that characterizes food business values in Seattle.
 
 ### Step One: Area-Based Affordability Metric (60% of the overall project)
-In the first step, I needed a proxy to be able to learn financial capacity of different areas in Seattle. There is data from decennial census that can be used. However, it does not provide granularity at the level required for this project. Moreover, it is a bit more fun to explore other sources of data. For this reason, I built up my proxy from the attractive housing market in Seattle. The proxy predicts property price per square footage as a function of location (X, Y) and other impacting variables. This work was a separate project I did on Seattle's housing market. The data is limited to 2014-2015 and extension of the work to today's [crazy] market might not be practical. Data exploration and ML modeling is captured in multiple `Jupyter` Notebooks in [this repository](https://github.com/a-azad/Seattle.housing.market). The map below, show the density of housing data in the dataset. The data was imported via [Kaggle's API](https://www.kaggle.com/harlfoxem/housesalesprediction).
+In the first step, I needed a proxy to be able to learn financial capacity of different areas in Seattle. There is data from decennial census that can be used. However, it does not provide granularity at the level required for this project. Moreover, it is a bit more fun to explore other sources of data. For this reason, I built up my proxy from the attractive housing market in Seattle. The proxy predicts property price per square footage as a function of location (X, Y) and other impacting variables. This work was a separate project I did on Seattle's housing market. The data is limited to 2014-2015 and extension of the work to today's [crazy] market might not be practical. Data exploration and ML modeling is captured in multiple `Jupyter` Notebooks in [this repository](https://github.com/a-azad/Seattle.housing.market). The map below, shows the density of housing data in the dataset. The data was imported via [Kaggle's API](https://www.kaggle.com/harlfoxem/housesalesprediction).
 In short, housing market analysis provided two major outputs:
 * An affordability metric which is a normalized $/sqf function per location.
     - The metric is normalized based on property characteristics and population. Population data was read from [Statistical Atlas Website](https://statisticalatlas.com/place/Washington/Seattle/Household-Income).
