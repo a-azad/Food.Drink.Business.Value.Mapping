@@ -48,7 +48,7 @@ Again, this is not necessarily an optimum approach but it gave me an opportunity
 ![](pix/yelp_dataset_schema_.png)
 
 ### Step Three: Application Development | Visualization (15% of the overall project)
-The result of this project will be customizable map. A user should expect to:
+The result of this project will be a customizable map. A user should expect to:
 
 1- Provide values for map discretization. Seattle map is discretized into blocks.
 2- Select business(es) of interest from a list.
@@ -58,5 +58,9 @@ The result of this project will be customizable map. A user should expect to:
     - Population
     - Financial metric ($/sqf)
     - Neighborhood local business metric
-    - Business performance (service performance?) rate compared
-4- 
+    - Business performance rate compared
+4- Overall performance maps
+
+This is a schematic of the application (webpage) that I will build in delivery of the project.
+
+![](pix/final_app.png)
