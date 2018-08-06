@@ -31,19 +31,19 @@ In short, housing market analysis provided two major outputs:
 
 ![](pix/map_locations_housrin.JPG)
 
-The problem is initially a regression modeling exercise. Simple linear model to tree-based algorithms were used. Although Random Forest (like always!) offered a significant improvement to the model, for the purpose of statistical inference, improved (Ridge) linear model was chosen. The results are reflected in the two figures below. The figure to the left show the correlation between variables and the one to the right, show x-plots predicted vs. actual data of a simple linear model. 
+The problem is initially a regression modeling exercise. Simple linear model to tree-based algorithms were used. Although Random Forest (like always!) offered a significant improvement to the model, for the purpose of statistical inference, improved (Ridge) linear model was chosen. The results are reflected in the two figures below. The figure to the left illustrates correlation between variables and the one to the right, shows x-plots of predicted vs. actual data for a linear model. 
 
 ![](pix/housing.png)
 
 ### Step Two: Business Segmentation (25% of the overall project)
-The interesting and a bit challenging part of this project is to learn trends of the market from the attractive [Yelp Open Dataset](https://www.yelp.com/dataset). In this project, __YELP__ dataset is explored to show the advantage of using a large dataset.  
-  
+The interesting and a bit challenging part of this project is to learn trends of the market from the attractive [Yelp Open Dataset](https://www.yelp.com/dataset). In this project, __YELP__ dataset is explored to show the advantage of using a large dataset.    
 __YELP Data Preparation__  
-The popular Yelp dataset is repeatedly referenced in ML/NLP projects. In _Step Two_ I use it to segment and collect information about food businesses in Seattle. The data is provided in `JSON` and `SQL` format via [Yelp Open Dataset](https://www.yelp.com/dataset). It is also available via[Kaggle's page](https://www.kaggle.com/yelp-dataset/yelp-dataset) or [Kaggle's API](https://github.com/Kaggle/kaggle-api). Just for fun and to explore multiple options, I followed these steps:  
+Yelp dataset is repeatedly referenced in ML/NLP projects. In _Step Two_ I use it to segment and collect information about food businesses in Seattle. The data is provided in `JSON` and `SQL` format via [Yelp Open Dataset](https://www.yelp.com/dataset). It is also available via [Kaggle's API](https://www.kaggle.com/yelp-dataset/yelp-dataset). Just for fun and to explore multiple options, I followed these steps:  
 - Imported JSON-converted CSV's via Kaggle's API
 - Built a local SQL database from scratch
-- Accessed to the database via a localhost  
-Again, this is not necessarily an optimum approach but it gave me an opportunity to learn. The SQL database was built in `PostgreSQL`. Codes related the data handling process as explained above are stored in [this folder](https://github.com/a-azad/Food.Drink.Business.Value.Mapping/tree/master/data_handeling) --data is not loaded on Github for the size of files, >7GB). The figure below is the structure of the SQL database schema (from Yelp's website).
+- Load the database via a localhost
+- Linked the localhost to Python  
+Again, this is not necessarily an optimum approach but it gave me an opportunity to learn. The SQL database was built in `PostgreSQL`. Codes related the data handling process as explained above are stored in [this folder](https://github.com/a-azad/Food.Drink.Business.Value.Mapping/tree/master/data_handeling). Data is not loaded on Github for the size of files (>7GB). The figure below is the structure of the SQL database schema (from Yelp's website).
 
 ![](pix/yelp_dataset_schema_.png)
 
