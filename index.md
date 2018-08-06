@@ -31,7 +31,7 @@ In short, housing market analysis provided two major outputs:
 
 ![](pix/map_locations_housrin.JPG)
 
-The problem is initially a regression modeling exercise. Simple linear model to tree-based algorithms were used. Although Random Forest (like always) offered a significant improvement to the model, for the purpose of statistical inference, improved (Ridge) linear model was chosen. Figure below, show the locations where home price can be estimated. 
+The problem is initially a regression modeling exercise. Simple linear model to tree-based algorithms were used. Although Random Forest (like always!) offered a significant improvement to the model, for the purpose of statistical inference, improved (Ridge) linear model was chosen. The results are reflected in the two figures below. The figure to the left show the correlation between variables and the one to the right, show x-plots predicted vs. actual data of a simple linear model. 
 
 ![](pix/housing.png)
 
