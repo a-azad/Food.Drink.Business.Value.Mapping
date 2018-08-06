@@ -2,7 +2,7 @@ ___Note___: _An extended version of this work will be my MSc thesis at Georgia T
 
 ### Motivation
 
-- __Have you__ ever thought about funding a business in the  __food and drink__ industry? Have you ever wanted to have your own business but you did not know what and where? 
+- __Have you__ ever thought about funding a business in the food and drink industry? Have you ever wanted to have your own business but you did not know what and where? 
 - __You__ did not know to what capacity you should invest. You did not know what kind, i.e., restaurant, coffee shop, pub, pizza place or stake house. You did not know in downtown, near your apartment, north of town, in an expensive area, etc. You did not know what menu you should offer. You did not know about your business model. And of course tens of other key questions.
 - __You__ wanted to talk to a financial advisor, a business consultant, a talented chef, your mom, your friend who likes sushi, ... You were thinking of having a conversation with someone on Wall Street ... And, many other approaches.  
 - __Is__ there any one-fit-all solution? I think there is. Data can help us out. It is no longer in hands of some genius people who can predict the future. This is a multi-dimensional problem and we have data in many of those dimensions. 
@@ -45,12 +45,10 @@ The problem is initially a regression modeling exercise. Simple linear model to 
 The interesting and a bit challenging part of this project is to learn trends of the market from the attractive [Yelp Open Dataset](https://www.yelp.com/dataset). In this project, __YELP__ dataset is explored to show the advantage of using a large dataset.  
   
 __YELP Data Preparation__  
-The popular Yelp dataset is repeatedly referenced in ML/NLP projects. In _Step Two_ I use it to segment and collect information about food businesses in Seattle. The data is provided in `JSON` and `SQL` format via [Yelp Open Dataset](https://www.yelp.com/dataset). It is also available via[Kaggle's page](https://www.kaggle.com/yelp-dataset/yelp-dataset) or [Kaggle's API](https://github.com/Kaggle/kaggle-api). Just for fun and to explore multiple options, I followed these steps:
-
+The popular Yelp dataset is repeatedly referenced in ML/NLP projects. In _Step Two_ I use it to segment and collect information about food businesses in Seattle. The data is provided in `JSON` and `SQL` format via [Yelp Open Dataset](https://www.yelp.com/dataset). It is also available via[Kaggle's page](https://www.kaggle.com/yelp-dataset/yelp-dataset) or [Kaggle's API](https://github.com/Kaggle/kaggle-api). Just for fun and to explore multiple options, I followed these steps:  
 - Imported JSON-converted CSV's via Kaggle's API
 - Built a local SQL database from scratch
-- Accessed to the database via a localhost
-
+- Accessed to the database via a localhost  
 Again, this is not necessarily an optimum approach but it gave me an opportunity to learn. The SQL database was built in `PostgreSQL`. Codes related the data handling process as explained above are stored in [this folder](https://github.com/a-azad/Food.Drink.Business.Value.Mapping/tree/master/data_handeling) --data is not loaded on Github for the size of files, >7GB). The figure below is the structure of the SQL database schema (from Yelp's website).
 
 ![](pix/yelp_dataset_schema_.png)
