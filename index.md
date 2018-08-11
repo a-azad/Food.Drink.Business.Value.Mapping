@@ -1,5 +1,3 @@
-___Note___: _An extended version of this work will be my MSc thesis at Georgia Tech._
-
 ### Motivation
 - __Have you__ ever thought about funding a business in the food and drink industry? Have you ever wanted to have your own business but you did not know what and where? 
 - __You__ did not know to what capacity you should invest. You did not know what kind, i.e., restaurant, coffee shop, pub, pizza place or stake house. You did not know in downtown, near your apartment, north of town, in an expensive area, etc. You did not know what menu you should offer. You did not know about your business model. And of course tens of other key questions.
@@ -65,18 +63,3 @@ The result of this project will be a customizable map. A user should expect to:
 This is a schematic of the application (webpage) that I will build in delivery of the project.
 
 ![](pix/final_app.png)
-
-__Suggestions__
-* Housing market does not react to income/demand in the food industry simultaneously. It should be used with caution.
-* The final model should be validated with actual financial records even with very minimum publicly available data.
-
-### Summary
-
-Output | Primary Nature | It can explain |  Source of Data | Progress
---- | --- | ---| --- | --- 
-$/block | Value of land | financial capacity of the block | Kaggle | 100%
-population/block | population density  | potential demand per capita | Statistical Atlas | 100%
-$xpopulation | Total financial potential | Financial Capacity Metric | - | 50%
-$uplift/local biz | Impact of local business on $/sqf | Reaction to New Biz Metric | Kaggle | 80%
-Number of reviews/block | Proxy to current demand | Saturation Metric | Yelp | 20%
-Review sentiments | Biz performance satisfaction | Customer Service Metric | Yelp | 20%
